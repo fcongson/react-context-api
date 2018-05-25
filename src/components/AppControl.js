@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
 import { AppContext } from './AppContextProvider';
+import '../App.css';
 
 class AppControl extends Component {
   render() {
     return (
-      <div>
-        <AppContext.Consumer>
-          {(context) => (
-            <React.Fragment>
+      <AppContext.Consumer>
+        {(context) => (
+          <React.Fragment>
+            <div class="div-center">
               <h1>app control</h1>
               <p>{context.state.hello}</p>
               <button onClick={context.helloWorld}>hi</button>
-            </React.Fragment>
-          )}
-        </AppContext.Consumer>
-      </div>
+            </div>
+          </React.Fragment>
+        )}
+      </AppContext.Consumer>
     );
   }
 }

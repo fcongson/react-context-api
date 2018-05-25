@@ -5,7 +5,7 @@ export const AppContext = React.createContext();
 class AppContextProvider extends Component {
   state = {
     hello: "hello",
-    helloTranslations: ["hola", "bonjour", "hallo", "ciao", "hej"]
+    helloTranslations: ["hola", "bonjour", "hallo", "ciao", "hej", "namaste", "aloha", "kia ora"]
   }
   render() {
     return (
