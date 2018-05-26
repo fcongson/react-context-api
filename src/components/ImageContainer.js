@@ -9,8 +9,8 @@ class ImageContainer extends Component {
       <AppContext.Consumer>
         {(context) => (
           <React.Fragment>
-            <div class="div-center">
-              <ImageControl />
+            <div className='div-center'>
+              <ImageControl index={this.props.index} />
             </div>
           </React.Fragment>
         )}

@@ -8,7 +8,7 @@ class AppControl extends Component {
       <AppContext.Consumer>
         {(context) => (
           <React.Fragment>
-            <div class="div-center">
+            <div className='div-center'>
               <h1>coffee</h1>
               <p>{context.state.hello}</p>
               <button onClick={context.helloWorld}>hi</button>

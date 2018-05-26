@@ -4,13 +4,21 @@ import '../App.css';
 import Image from './Image';
 
 class ImageControl extends Component {
+  state = {
+    index: this.props.index
+  }
+
+  updateIndex(maxIndex) {
+    this.setState({ index: Math.floor(Math.random() * maxIndex) })
+  }
+
   render() {
     return (
       <AppContext.Consumer>
         {(context) => (
           <React.Fragment>
-            <div class="div-center" onClick={context.helloWorld}>
-              <Image />
+            <div className='div-center' onClick={() => this.updateIndex(context.state.images.length)}>
+              <Image index={this.state.index} />
             </div>
           </React.Fragment>
         )}

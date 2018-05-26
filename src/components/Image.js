@@ -8,8 +8,8 @@ class Image extends Component {
       <AppContext.Consumer>
         {(context) => (
           <React.Fragment>
-            <div class="div-center">
-              <img src={context.getImage()} alt="Coffee"/>
+            <div className='div-center'>
+              <img src={context.state.images[this.props.index]} alt='Coffee' />
             </div>
           </React.Fragment>
         )}
