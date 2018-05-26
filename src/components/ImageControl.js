@@ -17,7 +17,7 @@ class ImageControl extends Component {
       <AppContext.Consumer>
         {(context) => (
           <React.Fragment>
-            <div className='div-center' onClick={() => this.updateIndex(context.state.images.length)}>
+            <div onClick={() => this.updateIndex(context.state.images.length)}>
               <Image index={this.state.index} />
             </div>
           </React.Fragment>
