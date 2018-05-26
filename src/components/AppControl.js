@@ -9,7 +9,7 @@ class AppControl extends Component {
         {(context) => (
           <React.Fragment>
             <div class="div-center">
-              <h1>app control</h1>
+              <h1>coffee</h1>
               <p>{context.state.hello}</p>
               <button onClick={context.helloWorld}>hi</button>
             </div>

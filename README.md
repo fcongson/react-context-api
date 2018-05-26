@@ -10,6 +10,9 @@ yarn install
 
 # run with auto reload at localhost:3000
 yarn start
+
+# create a production build
+yarn build
 ```
 
 ## Reference
