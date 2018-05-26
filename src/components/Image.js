@@ -9,7 +9,7 @@ class Image extends Component {
         {(context) => (
           <React.Fragment>
             <div class="div-center">
-              <h4>image</h4>
+              <img src="https://source.unsplash.com/400x400/?coffee" />
             </div>
           </React.Fragment>
         )}

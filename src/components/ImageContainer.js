@@ -10,7 +10,6 @@ class ImageContainer extends Component {
         {(context) => (
           <React.Fragment>
             <div class="div-center">
-              <h2>image container</h2>
               <ImageControl />
             </div>
           </React.Fragment>

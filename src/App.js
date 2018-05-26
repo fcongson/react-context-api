@@ -7,9 +7,11 @@ import ImageContainer from './components/ImageContainer';
 class App extends Component {
   render() {
     return (
-      <AppContextProvider>
-        <AppControl />
-        <ImageContainer />
+      <AppContextProvider >
+        <div class="App">
+          <AppControl />
+          <ImageContainer />
+        </div>
       </AppContextProvider>
     );
   }

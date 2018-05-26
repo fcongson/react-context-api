@@ -9,8 +9,7 @@ class ImageControl extends Component {
       <AppContext.Consumer>
         {(context) => (
           <React.Fragment>
-            <div class="div-center">
-              <h3>image control</h3>
+            <div class="div-center" onClick={context.helloWorld}>
               <Image />
             </div>
           </React.Fragment>
